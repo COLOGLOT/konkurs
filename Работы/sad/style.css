@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: white;
+}
+body{
+    background: black;
+}
+header{
+    min-width: 800px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header p, header h1{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.one{
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.one input{
+    color: black;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
+.one p{
+    margin-top: 10px;
+    color: red;
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.two div, .two button{
+    cursor: pointer;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to bottom, cornflowerblue, blue, cadetblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: cls 10s linear infinite;
+    filter: drop-shadow(0px 0px 80px midnightblue);
+    transition: .4s;
+
+}
+.two p{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    animation: cl 10s linear infinite;
+    font-size: 30px;
+}
+.two button:hover{
+    transform: scale(90%);
+}
+@keyframes cl {
+    0%{
+        background-color: brown;
+    }
+    25%{
+        background-color: cadetblue;
+    }
+    50%{
+        background-color: midnightblue;
+    }
+    75%{
+        background-color: mediumaquamarine;
+    }
+    100%{
+        background-color: brown;
+    }
+}
+
