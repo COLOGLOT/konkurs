@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background-color: #303030;
+}
+/* первый блок */
+    .block_one{
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+        background: url('../img/img_one.png');
+        background-repeat: no-repeat;
+        max-width: 1900px;
+        height: 1020px;
+    }
+    /* шапка */
+    .header_one{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        min-width: 480px;
+        height: 102px;
+        background-color: #303030;
+    }
+    .ul_one {
+        display: flex;
+        align-items: center;
+    }
+    .ul_one li{
+        display: block;
+        padding: 0px 30px;
+    }
+    .ul_one a{
+        text-transform: uppercase;
+        font-size: 25px;
+        text-decoration: none;
+        transition: .4s;
+    }
+    .logo{
+        width: 128px;
+        height: 69px;
+        position: absolute;
+        left: 81px;
+        top: 9px;
+    }
+    .example{
+        position: absolute;
+        right: 68px;
+        top: 38px;
+    }
+    a:hover{
+        color: #e8631c;
+    }
+    .example input{
+        border: none;
+        color: black;
+        padding: 10px;
+        width: 250px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    .search{
+        display: none;
+    }
+    .example img{
+        width: 30px;
+        height: 30px;
+    }
+    .example button{
+        margin-left: 10px;
+        position: absolute;
+        cursor: pointer;
+        border: none;
+        width: 30px;
+        height: 30px;
+    }
+    /* текст с кнопкой */
+    .main_one{
+        position: relative;
+        top: 400px;
+        left: 81px;
+        width: 710px;
+        height: 424px;
+    }
+    .main_one h1 {
+        font-size: 124.71px;
+    }
+    .main_one p{
+        overflow: auto;
+        font-size: 29.74px;
+    }
+    .main_one button{
+        cursor: pointer;
+        margin-top: 44px;
+        font-size: 29.2px;
+        border-radius: 5px;
+        width: 322px;
+        height: 66px;
+        text-transform: uppercase;
+        background-color: #e8631c;
+        border: none;
+        transition: .4s;
+    }
+    .main_one button:hover{
+        background-color: white;
+        color: black;
+    }
+/* второй блок */
+    .block_two{
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: #e7631c;
+        max-width: 1900px;
+        height: 1020px;
+        z-index: 1;
+    }
+    .shape{
+        width: 1475px;
+        height: 1195px;
+        background: url('../img/Shape.png');
+        position: relative;
+        bottom: 540px;
+        right: 700px; 
+    }
+    .text{
+        margin-top: 105px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 75.05px;
+        margin-bottom: 58px;
+        text-transform: uppercase;
+    }
+    .text p{
+        text-wrap: balance;
+        font-size: 29.74px;
+    }
+    .cards{
+        width: 372px;
+        height: 493px;
+        background-color: #303030;
+    }
+    .box{
+        display: grid;
+        gap: 64px;
+        grid-template-columns: repeat(3,0fr);
+        position: absolute;
+        top: 370px;
+        text-align: center;
+    }
+    .cards img{
+        width: 372px;
+        height: 323px;
+        margin-bottom: 30px;
+    }
+    .cards b{
+        font-size: 36.99px;
+    }
+    .cards p{
+        font-size: 22px
+    }
